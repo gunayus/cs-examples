@@ -4,6 +4,8 @@ import java.util.Random;
 
 public class Utils {
 
+	public static final int INTEGER_SIZE_IN_BYTES = 4;
+	
 	/**
 	 * generates a random int array of given size
 	 * 
