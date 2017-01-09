@@ -1,4 +1,4 @@
-package org.eg.cs.examples.sorting;
+package org.eg.cs.examples.algorithms.sorting;
 
 import java.util.Arrays;
 

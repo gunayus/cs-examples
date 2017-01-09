@@ -1,4 +1,4 @@
-package org.eg.cs.examples.arrays;
+package org.eg.cs.examples.structures.array;
 
 import org.eg.cs.examples.utils.Utils;
 

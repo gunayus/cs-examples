@@ -6,6 +6,9 @@ public class Utils {
 
 	public static final int INTEGER_SIZE_IN_BYTES = 4;
 	
+	public static final Random random = new Random();
+	
+	
 	/**
 	 * generates a random int array of given size
 	 * 
@@ -40,5 +43,29 @@ public class Utils {
 		array[i] = array[j];
 		array[j] = temp;
 	}
+
+	public static void setLast(int[] array, int v) {
+		array[array.length-1] = v;
+	}
 	
+	/**
+	 * Runtime complexity is O(n)
+	 * Spatial complexity is O(n + newSize) which is O(n)
+	 * 
+	 * @param intArray
+	 * @return
+	 */
+	public static int[] reallocateArray(int[] intArray, int newSize) {
+		int[] newArray = new int[newSize];
+		int length = Math.min(intArray.length, newSize);
+		
+		if (newSize > 1 && intArray.length > 1)
+			System.arraycopy(intArray, 0, newArray, 0, length);
+
+		return newArray;
+	}
+	
+	public static int randomInt(int bound) {
+		return random.nextInt(bound);
+	}
 }

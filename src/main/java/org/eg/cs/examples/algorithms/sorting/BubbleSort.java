@@ -1,4 +1,4 @@
-package org.eg.cs.examples.sorting;
+package org.eg.cs.examples.algorithms.sorting;
 
 import org.eg.cs.examples.utils.Utils;
 
