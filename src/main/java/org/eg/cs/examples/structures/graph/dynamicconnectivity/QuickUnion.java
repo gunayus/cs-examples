@@ -1,5 +1,12 @@
 package org.eg.cs.examples.structures.graph.dynamicconnectivity;
 
+/**
+ * 4. Quick Union
+ * https://www.youtube.com/watch?v=H0bkmI1Xsxg&list=PLe-ggMe31CTexoNYnMhbHaWhQ0dvcy43t&index=4
+ * 
+ * @author egunay
+ *
+ */
 public class QuickUnion extends UnionFind {
 
 	public QuickUnion(int n) {
@@ -8,18 +15,7 @@ public class QuickUnion extends UnionFind {
 	
 	public static void main(String[] args) {
 		UnionFind unionFind = new QuickUnion(10);
-		
-		unionFind.union(3, 5);
-		unionFind.union(4, 5);
-		unionFind.union(5, 2);
-		unionFind.union(0, 2);
-		
-		unionFind.printData();
-		
-		System.out.printf("%s connected(0, 3) = %s \n", unionFind.getClass().getSimpleName(), unionFind.connected(0, 3));
-		System.out.printf("%s connected(1, 3) = %s \n", unionFind.getClass().getSimpleName(), unionFind.connected(1, 3));
-		System.out.printf("%s connected(4, 3) = %s \n", unionFind.getClass().getSimpleName(), unionFind.connected(4, 3));
-		
+		unionFind.execute();
 	}
 	
 	@Override
